@@ -1,16 +1,48 @@
-Algoritmo CalcularPuntosDardos
-    // Declarar las variables para los tiros y el puntaje total
-    Definir puntos_por_tiro Como Entero
-    Definir numero_de_tiros Como Entero
-    Definir puntaje_total Como Entero
+Algoritmo CompraComidaPerro
+    Definir precio_bolsa Como Real
+    Definir precio_saco Como Real
+    Definir bolsas_necesarias Como Entero
+    
+    // Inicializar los precios
+    precio_bolsa = 22.00
+    precio_saco = 80.00
+    
+  
+    bolsas_necesarias = Trunc(precio_saco / precio_bolsa)
+    
+   
+    Escribir "a. Se pueden comprar ", bolsas_necesarias, " bolsas antes de alcanzar el precio de un saco."
+    
+    // Parte b: Diferencia en dinero al comprar 12 bolsas en lugar de sacos
+    Definir cantidad_bolsas Como Entero
+    Definir costo_bolsas Como Real
+    Definir peso_total Como Real
+    Definir sacos_necesarios Como Entero
+    Definir costo_sacos Como Real
+    Definir diferencia_dinero Como Real
     
     
-    puntos_por_tiro = 50
-    numero_de_tiros = 3
-    
-	
-    puntaje_total = puntos_por_tiro * numero_de_tiros
+    cantidad_bolsas = 12
     
     
-    Escribir "El puntaje total es: ", puntaje_total
+    costo_bolsas = cantidad_bolsas * precio_bolsa
+    
+    
+    peso_total = cantidad_bolsas * 5
+    
+    
+    sacos_necesarios = Trunc(peso_total / 25)
+   
+    Si peso_total % 25 > 0 Entonces
+        sacos_necesarios = sacos_necesarios + 1
+    FinSi
+    
+    
+    costo_sacos = sacos_necesarios * precio_saco
+    
+    
+    diferencia_dinero = costo_bolsas - costo_sacos
+    
+ 
+    Escribir "b. La diferencia en dinero al comprar 12 bolsas en lugar de sacos es: Lps ", diferencia_dinero
 FinAlgoritmo
