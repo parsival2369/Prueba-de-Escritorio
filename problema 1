@@ -1,1 +1,39 @@
+Algoritmo ContabilizarFrutas
+    // Declarar el arreglo con las cantidades de frutas en cada caja
+    Definir cajas Como Entero[5]
+    
+  
+    cajas[0] = 10
+    cajas[1] = 12
+    cajas[2] = 11
+    cajas[3] = 9
+    cajas[4] = 10
+    
+
+    Definir total_frutas Como Entero
+    Definir promedio_frutas Como Real
+    
+    
+    total_frutas = 0
+    
+    Para i = 0 Hasta 4 Con Paso 1 Hacer
+        total_frutas = total_frutas + cajas[i]
+    Fin Para
+    
+    
+    promedio_frutas = total_frutas / 5.0
+    
+    // Mostrar resultados
+    Escribir "El total de frutas es: ", total_frutas
+    Escribir "El promedio de frutas por canasta es: ", promedio_frutas
+FinAlgoritmo
+
+
+
+
+
+
+
+
+
 
