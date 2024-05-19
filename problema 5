@@ -1,0 +1,30 @@
+Algoritmo CalcularLectura
+    
+    Definir minutos_por_3_horas Como Entero
+    Definir horas_por_dia Como Entero
+    Definir minutos_lectura_dia Como Entero
+    Definir dias_por_semana Como Entero
+    Definir semanas_por_mes Como Entero
+    Definir minutos_lectura_semana Como Entero
+    Definir minutos_lectura_mes Como Entero
+    
+
+    minutos_por_3_horas = 23
+    horas_por_dia = 8
+    dias_por_semana = 5
+    semanas_por_mes = 4
+    
+    // Calcular minutos de lectura por día
+    minutos_lectura_dia = (horas_por_dia /3) * minutospor3_horas
+    
+    // Calcular minutos de lectura por semana
+    minutos_lectura_semana = minutos_lectura_dia * dias_por_semana
+    
+    // Calcular minutos de lectura por mes
+    minutos_lectura_mes = minutos_lectura_semana * semanas_por_mes
+    
+    // Mostrar resultados
+    Escribir "a. Minutos de lectura por día: ", minutos_lectura_dia
+    Escribir "b. Minutos de lectura por semana: ", minutos_lectura_semana
+    Escribir "c. Minutos de lectura por mes: ", minutos_lectura_mes
+FinAlgoritmo
