@@ -1,0 +1,16 @@
+Algoritmo CalcularPuntosDardos
+    // Declarar las variables
+    Definir puntos_por_tiro Como Entero
+    Definir numero_de_tiros Como Entero
+    Definir puntaje_total Como Entero
+    
+    
+    puntos_por_tiro = 50
+    numero_de_tiros = 3
+    
+    
+    puntaje_total = puntos_por_tiro * numero_de_tiros
+    
+
+    Escribir "El puntaje total es: ", puntaje_total
+FinAlgoritmo
