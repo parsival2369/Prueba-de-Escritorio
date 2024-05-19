@@ -1,1 +1,24 @@
+Algoritmo SubirGradas
+    Definir gradas_totales Como Entero
+    Definir avance_neto_por_cancion Como Entero
+    Definir canciones_necesarias Como Entero
+    Definir gradas_subidas_totales Como Entero
+    Definir gradas_bajadas_totales Como Entero
+
+
+    gradas_totales = 20
+    avance_neto_por_cancion = 1
+    
+
+    canciones_necesarias = gradas_totales / avance_neto_por_cancion
+
+ 
+    gradas_subidas_totales = canciones_necesarias * 3
+    gradas_bajadas_totales = (canciones_necesarias - 1) * 2
+
+    // Mostrar resultados
+    Escribir "a. Se necesitan ", canciones_necesarias, " canciones para llegar al segundo piso."
+    Escribir "b. Se subieron en total ", gradas_subidas_totales, " gradas."
+    Escribir "c. Se bajaron en total ", gradas_bajadas_totales, " gradas."
+FinAlgoritmo
 
