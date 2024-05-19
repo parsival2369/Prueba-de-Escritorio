@@ -1,0 +1,26 @@
+Algoritmo CalcularVitaminas
+    
+    Definir dosis_vitamina_c_diaria Como Real
+    Definir porcentaje_retencion_vitamina Como Real
+    Definir dosis_retenida_deseada Como Real
+    Definir dias_para_retener_dosis Como Entero
+    Definir litros_diarios_agua Como Real
+    Definir dias_tratamiento Como Entero
+    Definir litros_totales_agua Como Real
+    
+    
+    dosis_vitamina_c_diaria = 75
+    porcentaje_retencion_vitamina = 0.20
+    dosis_retenida_deseada = 100
+    litros_diarios_agua = 4
+    dias_tratamiento = 6
+ 
+    dias_para_retener_dosis = dosis_retenida_deseada / (dosisvitaminacdiaria * porcentaje_retencion_vitamina)
+    
+
+    litros_totales_agua = litros_diarios_agua * dias_tratamiento
+    
+   
+    Escribir "a. Se necesitan ", dias_para_retener_dosis, " días para retener ", dosis_retenida_deseada, " mg de Vitamina C."
+    Escribir "b. Se han tomado un total de ", litros_totales_agua, " litros de agua hasta el día ", dias_tratamiento, " del tratamiento."
+FinAlgoritmo
